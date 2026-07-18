@@ -615,9 +615,7 @@ header nav {
   50% { opacity: 0; }
 }
 
-/* ---------------------------------------------
-   Footer
---------------------------------------------- */
+/* Footer*/
 footer {
   background: var(--bg);
   border-top: 1px solid var(--border);
@@ -655,9 +653,6 @@ footer {
   color: var(--accent-teal);
 }
 
-/* ---------------------------------------------
-   Responsive
---------------------------------------------- */
 @media (max-width: 900px) {
   .about-grid {
     grid-template-columns: 1fr;
