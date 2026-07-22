@@ -53,13 +53,13 @@ body {
   align-items: center;
 }
 .about-section, .skills-section, .projects-section,
-.gallery-section, .training-section, .contact-section {
+.training-section, .contact-section {
   padding: var(--section-pad) 0;
 }
 .about-section, .projects-section, .training-section {
   background-color: var(--bg);
 }
-.skills-section, .gallery-section, .contact-section {
+.skills-section, .contact-section {
   background-color: var(--bg-alt);
 }
 .reveal {
@@ -477,36 +477,6 @@ header nav {
   align-self: flex-start;
   margin-top: 0.5rem;
 }
-
-/* Gallery */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 0.9rem;
-}
-.gallery-title{
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: clamp(1.6rem, 3.2vw, 2.4rem);
-  margin-bottom: 3rem;
-  text-align: center;
-}
-.gallery-item {
-  aspect-ratio: 1;
-  border-radius: 8px;
-  overflow: hidden;
-  border: 1px solid var(--border);
-} 
-.gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transition: transform 0.4s ease;
-}
-.gallery-item:hover img {
-  transform: scale(1.08);
-}
-
 /* TRAINING & CERTIFICATES  */
 .timeline {
   position: relative;
@@ -670,10 +640,6 @@ footer {
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .gallery-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 @media (max-width: 768px) {
@@ -698,11 +664,6 @@ footer {
   .projects-grid {
     grid-template-columns: 1fr;
   }
-
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .terminal-body {
     font-size: 0.78rem;
   }
